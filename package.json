@@ -1,0 +1,30 @@
+{
+    "name": "@herval/create-react-app",
+    "version": "1.0.1",
+    "type": "module",
+    "description": "CLI para criar aplicações React baseadas no template Herval",
+    "bin": {
+        "create-react-app": "./dist/index.js"
+    },
+    "scripts": {
+        "build": "tsc",
+        "dev": "tsc --watch",
+        "prepare": "pnpm run build"
+    },
+    "publishConfig": {
+        "registry": "https://pkgs.dev.azure.com/H-Engenharia-TIC/_packaging/herval-npm/npm/registry/"
+    },
+    "dependencies": {
+        "chalk": "^5.3.0",
+        "commander": "^12.0.0",
+        "degit": "^2.8.4",
+        "inquirer": "^9.2.12",
+        "ora": "^8.0.1"
+    },
+    "devDependencies": {
+        "@types/degit": "^2.8.6",
+        "@types/inquirer": "^9.0.7",
+        "@types/node": "^20.11.0",
+        "typescript": "^5.3.3"
+    }
+}
