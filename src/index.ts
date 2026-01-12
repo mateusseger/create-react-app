@@ -21,7 +21,7 @@ async function main() {
         .description('🚀 CLI para criar aplicações React baseadas no template Herval')
         .version('1.0.0')
         .argument('[project-name-here]', 'Nome do projeto (kebab-case)')
-        .action(async (projectNameArg) => {degit
+        .action(async (projectNameArg) => {
             console.log(chalk.blue.bold('\n🚀 Bem-vindo ao CLI de criação de aplicações React Herval!\n'));
 
             let projectName = projectNameArg;
@@ -174,7 +174,7 @@ async function main() {
 
             // Success message
             console.log(chalk.green.bold('\n✨ Projeto criado com sucesso!\n'));
-            console.log(chalk.cyan('Para começar a desenvolver:'));
+            console.log(chalk.cyan('Para começar a desenvolver:\n'));
             console.log(chalk.white(`  cd ${projectName}`));
             console.log(chalk.white('  pnpm run dev\n'));
 
